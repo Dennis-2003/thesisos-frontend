@@ -3,7 +3,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import {
   LayoutDashboard, MessageSquare, BookOpen, FileText,
   Quote, Settings, FolderOpen, BookMarked, Users,
-  Calendar, HelpCircle, ListTree, Search,
+  Calendar, HelpCircle, ListTree, Search, Globe
 } from 'lucide-react';
 import clsx from 'clsx';
 
@@ -83,6 +83,7 @@ export function Sidebar() {
             {btn({ label: 'Dashboard',     icon: <LayoutDashboard size={17} />, href: '/dashboard' })}
             {btn({ label: 'Mis Proyectos', icon: <FolderOpen size={17} />,      href: '/projects' })}
             {btn({ label: 'Buscar',        icon: <Search size={17} />,           href: '/search' })}
+            {btn({ label: 'Investigación',  icon: <Globe size={17} />,            href: '/research' })}
           </div>
         </div>
 
